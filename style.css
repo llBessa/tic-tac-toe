@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(11, 11, 49);
+    color: rgb(219, 21, 21);
+}
+
+input {
+    color: rgb(0, 0, 0);
+}
+
+.logo {
+    color: white;
+    background-color: rgb(60, 138, 8);
+    text-align: center;
+    padding: 0% 40%;
+}
+
+a {
+    color: white;
+}
