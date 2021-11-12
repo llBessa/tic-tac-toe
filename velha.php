@@ -9,10 +9,10 @@
     <title>Tic Tac Toe</title>
 </head>
 <body>
-    <h1 class="logo">Tic Tac Toe</h1>
+    <h1 class="logo">Tic Tac Toe </h1>
     <ul>
-        <nav>
-            Serviços:
+        <nav class="list">
+            <strong class="list-title">Serviços:</strong> <br> <br>
             <li><a href="index.php">Home</a></li>
             <li><a href="velha.php">jogar agora</a></li>
         </nav>
