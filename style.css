@@ -11,14 +11,19 @@ a {
     color: white;
 }
 
-.logo, h1{
-    margin-left: 40%;
+.txt {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
     margin-top: 10%;
     width: 200px;
     height: 100px;
     color: white;
     text-align: center;
-    border: solid;
+    border: 1px solid;
     border-color: green;
 }
 
@@ -30,4 +35,10 @@ a {
 
 .list-title {
     font-style: normal;
+}
+
+.imagem {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
 }
