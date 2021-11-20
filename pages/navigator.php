@@ -2,6 +2,8 @@
     <div class="logo">
         <h1 class="title">Tic Tac Toe </h1>
     </div>
+    <div id="background">
+    </div>
     <ul>
         <nav class="list">
             <strong class="list-title">Serviços:</strong> <br> <br>

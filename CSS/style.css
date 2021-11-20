@@ -4,17 +4,13 @@
 }
 
 body {
-    background-color: rgb(11, 11, 49);
-    background-image: url(../imagens/board-neon.jpg);
-    background-position: top;
-    background-clip: border-box;
-    background-size: contain;
-    background-attachment: fixed;
+    background-color: rgb(0, 0, 0);
     color: white;
     border: double;
-    border-radius: 5%;
+    border-radius: 10%;
     border-color: green;
     margin: 1% 5%;
+    overflow-x: hidden;
 }
 
 a {
@@ -35,9 +31,9 @@ a {
     height: 100px;
     color: white;
     text-align: center;
-    border: 1px solid;
+    border: double;
     border-color: green;
-    border-radius: 5%;
+    border-radius: 10%;
     padding-top: 1.7rem;
 }
 
@@ -58,4 +54,16 @@ a {
     font-size: 1.2rem;
     text-align: center;
     margin-bottom: 5%;
+}
+
+#background {
+    background-image: url(../imagens/board-neon.jpg);
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0.3;
+    width: 100vw;
+    height: 100rem;
+    z-index: -1;
 }
