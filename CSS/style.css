@@ -4,13 +4,14 @@
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(3, 6, 43);
     color: white;
     border: double;
     border-radius: 10%;
     border-color: green;
     margin: 1% 5%;
     overflow-x: hidden;
+    padding: 2%;
 }
 
 a {
@@ -43,27 +44,43 @@ a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.imagem {
-    display: flex ;
-    justify-content: center;
-    margin-bottom: 10%;
-}
-
 .gameinfo {
     width: 80%;
     font-size: 1.2rem;
     text-align: center;
     margin-bottom: 5%;
+    margin-top: 5%;
 }
 
-#background {
-    background-image: url(../imagens/board-neon.jpg);
-    background-size: cover;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    opacity: 0.3;
-    width: 100vw;
-    height: 100rem;
-    z-index: -1;
+#game {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#board {
+    width: 300px;
+    height: 300px;
+    border: double;
+    border-color: green;
+    border-radius: 10%;
+}
+
+table {
+    width: 300px;
+    height: 300px;
+    font-size: 60px;
+    text-align: center;
+}
+
+tr {
+    padding: 20%;
+}
+
+#td1, #td2, #td4, #td5, #td7, #td8{
+    border-right: 2px double green;
+}
+
+#td1, #td2, #td3, #td4, #td5, #td6{
+    border-bottom: 2px double green;
 }

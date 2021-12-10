@@ -20,7 +20,7 @@
         // função que define as rodadas e executa todo o processo do jogo
         public function round();
     };
-
+    
     class player{
         public $simbolo = null;
         public $name = null;
