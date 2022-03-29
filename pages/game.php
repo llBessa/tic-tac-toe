@@ -2,9 +2,6 @@
     interface iGame{
         // metodos da classe
 
-        // exibe a logo do jogo
-        public function logo();
-
         // exibe as mensagens iniciais e pede a escolha do usuario
         public function start();
 
@@ -32,25 +29,16 @@
         private $matrix = array(
             0 => array(0 => "0 0", 1 => "0 1", 2 => "0 2"),
             1 => array(0 => "1 0", 1 => "1 1", 2 => "1 2"),
-            2 => array(0 => "2 0", 1 => "2 1", 2 => "2 2"));
+            2 => array(0 => "2 0", 1 => "2 1", 2 => "2 2")
+        );
         
         private $winner = null;
         private $players = null;
-        private $simbolos = array("X" => 0, "O" => 1);
+        // private $simbolos = array("X" => 0, "O" => 1);
 
         // metodos da classe
 
-        public function logo(){
-            echo 
-            <<<END
-            =================================
-            ========== Tic Tac Toe ==========
-            =================================\n\n
-            END;
-        }
-
         public function start(){
-            $this->logo();
 
             $this->players[] = new player();
             $this->players[] = new player();
@@ -92,13 +80,9 @@
 
         public function board(){
             echo "\n\n";
-            $this->logo();
         
             for($i = 0; $i < 3; $i++){
-                echo <<<END
-                         {$this->matrix[$i][0]} | {$this->matrix[$i][1]} | {$this->matrix[$i][2]}
-                         
-                END;
+                echo("{$this->matrix[$i][0]} | {$this->matrix[$i][1]} | {$this->matrix[$i][2]}\n");
                 if($i < 2) echo "---------------\n";
             }
             echo "\n";
@@ -143,10 +127,8 @@
             // se existir vencedor, exibe a tabela e uma mensagem de vencedor
             if($this->winner){
                 $this->board();
-                if($this->winner == " {$this->players[0]->simbolo} ")
-                    echo "\nO vencedor foi {$this->players[0]->name}\n";
-                else
-                    echo "\nO vencedor foi {$this->players[1]->name}\n";
+                if($this->winner == " {$this->players[0]->simbolo} ") echo "\nO vencedor foi {$this->players[0]->name}\n";
+                else echo "\nO vencedor foi {$this->players[1]->name}\n";
             }
         }
 
@@ -163,4 +145,5 @@
                 $timePlayer = 1 - $timePlayer;
             }
         }
-    };
+    }
+?>
