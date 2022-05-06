@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -18,7 +20,7 @@
 <body>
     <header class="mb-5">
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <a href="./home.php">
+            <a href="./index.php">
                 <div class="navbar-brand">
                     <i class="fa-duotone fa-hashtag fa-lg"></i>
                     <span class="ml-2">Jogo da velha</span>
@@ -27,7 +29,7 @@
 
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="./home.php">Home</a>
+                    <a class="nav-link" href="./index.php">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./table.php">Jogar</a>

@@ -11,7 +11,7 @@
     height: var(--box-h);
 }
 
-.row {
+.box .row {
     border-bottom: 2px solid black;
 }
 
@@ -23,5 +23,5 @@
 }
 
 .border-none {
-    border: none;
+    border: none !important;
 }

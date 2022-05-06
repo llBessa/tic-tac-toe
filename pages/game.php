@@ -78,16 +78,6 @@
             $this->matrix[$play[0]][$play[1]] = " $timePlayer->simbolo ";
         }
 
-        public function board(){
-            echo "\n\n";
-        
-            for($i = 0; $i < 3; $i++){
-                echo("{$this->matrix[$i][0]} | {$this->matrix[$i][1]} | {$this->matrix[$i][2]}\n");
-                if($i < 2) echo "---------------\n";
-            }
-            echo "\n";
-        }
-
         public function winner(){
 
             // verifica se existem jogadas vitoriosas na horizontal
