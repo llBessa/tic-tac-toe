@@ -1,0 +1,27 @@
+:root {
+    --box-w: 604px;
+    --box-h: 604px;
+}
+
+.box {
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 2%;
+    width: var(--box-w);
+    height: var(--box-h);
+}
+
+.row {
+    border-bottom: 2px solid black;
+}
+
+.box-pill {
+    padding: 10px;
+    border-right: 2px solid black;
+    width: calc(var(--box-w) / 3 - 2px);
+    height: calc(var(--box-h) / 3 - 2px);
+}
+
+.border-none {
+    border: none;
+}
