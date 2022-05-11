@@ -8,8 +8,6 @@
         // pede ao usuario a posição em que este deseja jogar e realiza a jogada
         public function getChoice($player);
 
-        // exibe o tabuleiro do jogo na sua forma atual
-        public function board();
 
         // verifica a existencia de vencedores na rodada
         public function winner();
